@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../stylesheets/PokemonsDetails.scss';
 
 class PokemonDetails extends Component{
     render(){
@@ -7,7 +8,7 @@ class PokemonDetails extends Component{
             <div className="pokemonDetails__container">
                 <div className="pokemonDetails__image--container">
                     <img className="pokemonDetails__img" src={image} alt={name} />
-                    <p className="pokemonDetails__id">{id}</p>
+                    <p className="pokemonDetails__id">ID / {id}</p>
                 </div>
                 <div className="pokemonDetailsInfo--container">
                     <p className="pokemonName">{name}</p>

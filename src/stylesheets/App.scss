@@ -1,0 +1,39 @@
+.triangle{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+}
+
+.triangle__right{
+    position: fixed;
+    transform: rotate(45deg);
+    right:-30px;
+    top:-30px;
+}
+.triangle__left{
+    position: fixed;
+    top:-30px;
+    left:-30px;
+    transform: rotate(45deg);
+}
+
+.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background-color: red;
+}
+
+.circle__right{
+    position: fixed;
+    bottom: -80px;
+    right: -80px;
+}
+
+.circle__left{
+    position: fixed;
+    bottom: -80px;
+    left: -80px;
+
+
+}

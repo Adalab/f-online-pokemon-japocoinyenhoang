@@ -1,0 +1,16 @@
+.pokemonResult__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 180px;
+    padding:0;
+}    
+.pokemonResult__item{
+    background-color: white;
+    width: 220px;
+    border: 1px lightgray solid;
+    box-shadow: 10px lightgray;
+    border-radius: 2px;
+    margin: 10px;
+}

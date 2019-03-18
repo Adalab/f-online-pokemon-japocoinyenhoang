@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {fetchPokemonApi} from './services/PokemonApi';
 import Filter from './components/Filter';
 import PokemonList from './components/PokemonList';
-import './App.scss';
+import './stylesheets/App.scss';
 
 class App extends Component {
   constructor(props){
@@ -49,16 +49,19 @@ class App extends Component {
     return pokemonArray.filter(item =>item.name.toUpperCase().includes(query.toUpperCase()));
   }
 
-  
 
   render() {
     return (
       <div className="App">
-      <header className="PokeHeader">
+      <header className="header__container">
+       <div className="triangle triangle__left"></div>
+       <div className="triangle triangle__right"></div>
         <Filter handleInputValue={this.handleInputValue} />
       </header>
-      <main className="PokemonResult">
+      <main className="pokemonResult__container">
         <PokemonList filteredPokemon={this.seachFilter()} />
+        <div className="circle circle__left"></div>
+        <div className="circle circle__right"></div>
       </main>
       </div>
     );
